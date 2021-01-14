@@ -9,13 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElephantCountry">
-        <activity android:name=".SaleActivity"></activity>
+        <activity android:name=".StatisticActivity"></activity>
+        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".TrendingActivity" />
+        <activity android:name=".AlertActivity" />
+        <activity android:name=".SaleActivity" />
         <activity android:name=".StockReportActivity" />
         <activity android:name=".OTPActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".DashBordActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name="store">
+        <item>All Store</item>
+    </string-array>
+
+    <string-array name="Accessories">
+
+        <item>All Items</item>
+        <item>Applique bag</item>
+        <item>Applique</item>
+        <item>Bucket Flap Bag
+</item>
+        <item>Cizami Hand Purse
+</item>
+        <item>Cross Stitch Purse
+</item>
+        <item>III Fold Purse Ghy
+</item>
+        <item>Indigo elephent coin purse
+</item>
+        <item>Indigo five pockket bag
+</item>
+        <item>Instagram Bag
+</item>
+        <item>Instagram Bag Ghy
+</item>
+        <item>Jute bag in bag
+</item>
+        <item>Karbi sling bag
+</item>
+        <item>Key Ring
+</item>
+        <item>Kids Bag
+</item>
+        <item>Kora bag
+</item>
+
+
+
+
+
+
+    </string-array>
+
+    <string-array name="Apparels">
+        <item>All Items</item>
+        <item>Aagor Mens Kurti Short
+</item>
+        <item>Aagor Plazo
+</item>
+        <item>Aagor Shirt
+</item>
+        <item>Aagor Women Kurti
+</item>
+        <item>Ajagar stole buta
+</item>
+        <item>Assam Weave Shawl
+</item>
+        <item>Black Muffler
+</item>
+        <item>BN Chanderi Silk Saree
+</item>
+        <item>Cizami stole
+</item>
+        <item>Cotton Stole Kutch
+</item>
+        <item>Devdaan Saree
+</item>
+        <item>Eri Muga Strip
+</item>
+        <item>Katha stole
+</item>
+        <item>Makhela sador
+</item>
+        <item>Mekhela Sador RG
+</item>
+
+
+
+    </string-array>
+
+    <string-array name="Books">
+        <item>All Items</item>
+        <item>An impact assasement of ICDS in Meghalaya
+</item>
+        <item>Anduring Loss
+</item>
+        <item>Living with conflicts
+</item>
+        <item>Penning For Peace
+</item>
+        <item>Progress at whose cost
+</item>
+        <item>Relation across borders
+</item>
+        <item>Religious resources for peace work
+</item>
+        <item>Search for a new society
+</item>
+        <item>Teaching for Peace
+</item>
+        <item>Grounded in tradition seeking change
+</item>
+        <item>Growing up in a conflict Zone children surviving conflict in Manipur
+</item>
+        <item>Growing up in a conflict Zone children surviving conflict in Tripura
+</item>
+        <item>hanggharkho niramoyor  parampara gatah padhati
+</item>
+        <item>In transition the mizos of mizoram
+</item>
+        <item>Journals of dispute
+</item>
+
+    </string-array>
+
+
+    <string-array name="HomeAccessories">
+        <item>All Items</item>
+        <item>Animal bed spreader
+</item>
+        <item>Animal Cushion Cover
+</item>
+        <item>Urmul Cushion Cover
+</item>
+        <item>Applique Bedcover
+</item>
+        <item>Applique cushion cover
+</item>
+        <item>Baby pillow green tiger
+</item>
+        <item>Begal Tea Towel
+</item>
+        <item>Bengal Gamusa
+</item>
+        <item>Cizami Coaster
+</item>
+        <item>Cizami cushion cover
+</item>
+        <item>Cotton Bath Mate
+</item>
+        <item>Dimasa Mekhala Sador
+</item>
+        <item>Dimasa Runner
+</item>
+        <item>Gray tiger cushion cover
+</item>
+        <item>Jute Table Mat
+</item>
+
+
+    </string-array>
+
+
+    <string-array name="FoodItems">
+        <item>All Items</item>
+        <item>Aroommya Single Pyramid
+</item>
+        <item>Aroomya green tea rose petals
+</item>
+        <item>Aroomya green tea with lemon tulsi
+</item>
+        <item>Aroomya green tea with tulsi
+</item>
+        <item>Aroomya single pyramid infusers
+</item>
+        <item>Black Rice
+</item>
+        <item>FP Black Tea Tea Bags
+</item>
+        <item>FP Green Tea Tea Bags
+</item>
+        <item>FP Manipuri Black
+</item>
+        <item>Ghee
+</item>
+        <item>Ginger powder
+</item>
+        <item>Green Tea Organic
+</item>
+        <item>Honey
+</item>
+        <item>Turmic
+</item>
+        <item>Wild Tea Foest Pack
+</item>
+
+    </string-array>
+
+</resources>

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Elephant Country</string>
     <string name="rupees">\u20B9 175500</string>
+    <string name="rupees15800">\u20B9 15800</string>
 </resources>

@@ -22,12 +22,17 @@ public class DashBordActivity extends AppCompatActivity {
         GraphView linegraph = (GraphView) findViewById(R.id.line_graph);
 
         BarGraphSeries<DataPoint> lineSeries = new BarGraphSeries<>(new DataPoint[] {
-                new DataPoint(0, 1),
-                new DataPoint(1, 5),
-                new DataPoint(2, 3),
-                new DataPoint(3, 2),
-                new DataPoint(4, 6)
+
+                // date 1st january -7 th, renvenue 5k -20k
+                new DataPoint(05, 1542),
+                new DataPoint(1542, 525),
+                new DataPoint(224, 3524),
+                new DataPoint(3245, 2524),
+                new DataPoint(4254, 6524)
         });
+
+
+
         linegraph.addSeries(lineSeries);
 
 
@@ -41,6 +46,21 @@ public class DashBordActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(DashBordActivity.this,SaleActivity.class));
+            }
+        });findViewById(R.id.Alert).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashBordActivity.this,AlertActivity.class));
+            }
+        });findViewById(R.id.Trending).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashBordActivity.this,TrendingActivity.class));
+            }
+        });findViewById(R.id.statistic).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashBordActivity.this,StatisticActivity.class));
             }
         });
     }

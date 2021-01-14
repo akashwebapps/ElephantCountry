@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    tools:context=".DashBordActivity">
+
+    <include layout="@layout/toolbar_profile"></include>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/layout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/purple_200"
+                    android:padding="10dp">
+
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_totalsale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="5dp"
+                            android:text="Opening Stock"
+                            android:textColor="@color/shipped_status_bg"
+                            android:textSize="16sp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <TextView
+                            android:id="@+id/tv_totalsalers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_totalsale"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="2dp"
+                            android:text="  800"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold"></TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_todaysale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="end"
+                            android:padding="5dp"
+                            android:text="Closing Stock"
+                            android:textColor="@color/shipped_status_bg"
+                            android:textSize="16sp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <TextView
+                            android:id="@+id/tv_todaysalers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_todaysale"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="2dp"
+                            android:text="  540"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold"></TextView>
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/cardshadow">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:background="@drawable/whitebg"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Select Store"
+                                    android:textSize="12sp">
+
+                                </TextView>
+
+                                <Spinner
+                                    android:id="@+id/select_class_spinnerid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:background="@drawable/spinnerstyle"
+                                    android:entries="@array/store"
+
+                                    ></Spinner>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"></LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Select Category"
+                                    android:textSize="10sp"
+                                    android:padding="5dp"
+                                    >
+
+                                </TextView>
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginRight="@dimen/_20sdp"
+                                    android:background="@drawable/spinnerstyle"
+
+                                    ></Spinner>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Select Item"
+                                    android:textSize="10sp"
+                                    android:padding="5dp"
+
+                                    >
+
+                                </TextView>
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginRight="@dimen/_20sdp"
+                                    android:background="@drawable/spinnerstyle"
+
+                                    ></Spinner>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:padding="@dimen/_2sdp"
+                android:background="@drawable/card_shadow"
+                android:orientation="vertical"
+
+                >
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"> <!-- stretch the second column of the layout-->
+
+                            <!-- first row of the table layout-->
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Product"
+                                    android:textColor="#000"
+                                  style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Current Stock"
+                                    android:textColor="#000"
+                                    style="@style/TableText"/>
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="Cixami Wall Hanging"
+                                    style="@style/TableText" />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="0.00 pcs"
+                                    style="@style/TableText" />
+
+
+                            </TableRow>
+
+
+
+
+                        </TableLayout>
+
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="Export"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableRight="@drawable/ic_baseline_longarrow_forward_24"
+            android:textColor="@color/white"
+            ></TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
