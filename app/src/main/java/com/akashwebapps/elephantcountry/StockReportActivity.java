@@ -3,11 +3,22 @@ package com.akashwebapps.elephantcountry;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
+
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,14 +26,14 @@ import java.util.List;
 public class StockReportActivity extends AppCompatActivity {
 
 
-    private Spinner spinner_store,spinner_category,spinner_item;
+    private TextView spinner_store, spinner_category, spinner_item;
 
 
-    private String [] store={"All Store"};
-    private String [] category={"All Category","Accessories","Apparels","Books","Home Accessories","Food Items"};
 
-    private List<ArrayList<String>> list=new ArrayList<>();
-    private String [] item={};
+    private final String[] category = {"All Category", "Accessories", "Apparels", "Books", "Home Accessories", "Food Items"};
+
+    int position=0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,78 +41,167 @@ public class StockReportActivity extends AppCompatActivity {
         setContentView(R.layout.activity_stock_report);
 
 
-        spinner_store=findViewById(R.id.spinner_store);
-        spinner_category=findViewById(R.id.spinner_category);
-        spinner_item=findViewById(R.id.spinner_item);
+        spinner_store = findViewById(R.id.spinner_store);
+        spinner_category = findViewById(R.id.spinner_category);
+        spinner_item = findViewById(R.id.spinner_item);
+
+
 
         setUpSpinner();
     }
 
     private void setUpSpinner() {
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,store);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner_store.setAdapter(adapter);
-
-
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,category);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner_category.setAdapter(adapter1);
-
-
-
-        spinner_category.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinner_store.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onClick(View view) {
+                OpenBottomDialog(StockReportActivity.this, getResources().getStringArray(R.array.store), new StockReportActivity.GetPost() {
+                    @Override
+                    public void getpos(int pos,String name) {
 
-                if (i==0){
+                        spinner_store.setText(name);
 
-                    ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(StockReportActivity.this, android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.store));
-                    adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    spinner_item.setAdapter(adapter1);
-                }
-
-                if (i==1){
-
-                    ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(StockReportActivity.this, android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.Accessories));
-                    adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    spinner_item.setAdapter(adapter1);
-                }
-                if (i==2){
-
-                    ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(StockReportActivity.this, android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.Apparels));
-                    adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    spinner_item.setAdapter(adapter1);
-                } if (i==3){
-
-                    ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(StockReportActivity.this, android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.Books));
-                    adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    spinner_item.setAdapter(adapter1);
-                } if (i==4){
-
-                    ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(StockReportActivity.this, android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.HomeAccessories));
-                    adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    spinner_item.setAdapter(adapter1);
-                }if (i==5){
-
-                    ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(StockReportActivity.this, android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.FoodItems));
-                    adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    spinner_item.setAdapter(adapter1);
-                }
-
-
-
-
+                    }
+                });
             }
+        });
 
+
+        spinner_category.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
+            public void onClick(View view) {
+                OpenBottomDialog(StockReportActivity.this, category, new StockReportActivity.GetPost() {
+                    @Override
+                    public void getpos(int pos,String name) {
 
+                        position=pos;
+                        spinner_category.setText(name);
+                    }
+                });
+            }
+        });
+
+        spinner_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String[] list = new String[0];
+                if (position==0){
+                    list=getResources().getStringArray(R.array.item);
+                }
+                if (position==1){
+                    list=getResources().getStringArray(R.array.Accessories);
+                }
+                if (position==2){
+                    list=getResources().getStringArray(R.array.Apparels);
+                }
+                if (position==3){
+                    list=getResources().getStringArray(R.array.Books);
+                }if (position==4){
+                    list=getResources().getStringArray(R.array.HomeAccessories);
+                }if (position==5){
+                    list=getResources().getStringArray(R.array.FoodItems);
+                }
+
+
+
+
+                OpenBottomDialog(StockReportActivity.this, list, new StockReportActivity.GetPost() {
+                    @Override
+                    public void getpos(int pos,String name) {
+
+                        spinner_item.setText(name);
+                    }
+                });
             }
         });
 
 
 
 
+
+    }
+
+
+    public  void OpenBottomDialog(final Activity activity, String[] list, GetPost getPos) {
+
+
+
+        View sheetView = activity.getLayoutInflater().inflate(R.layout.layout_bottomsheet, null);
+        ViewGroup parentViewGroup = (ViewGroup) sheetView.getParent();
+        if (parentViewGroup != null) {
+            parentViewGroup.removeAllViews();
+        }
+
+        final BottomSheetDialog mBottomSheetDialog = new BottomSheetDialog(activity);
+        mBottomSheetDialog.setContentView(sheetView);
+        mBottomSheetDialog.show();
+        FrameLayout bottomSheet = mBottomSheetDialog.findViewById(R.id.design_bottom_sheet);
+        mBottomSheetDialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        //BottomSheetBehavior.from(bottomSheet).setState(BottomSheetBehavior.STATE_EXPANDED);
+
+
+        ListView listview = sheetView.findViewById(R.id.listview);
+
+        listview.setAdapter(new CustomAdapter(activity,list));
+
+
+
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                mBottomSheetDialog.dismiss();
+                getPos.getpos(i,list[i]);
+            }
+        });
+
+
+    }
+
+
+    public  interface GetPost{
+        void getpos(int pos,String list);
+    }
+
+    public class CustomAdapter extends BaseAdapter {
+        Context context;
+        String[] extraList;
+        LayoutInflater inflter;
+
+        public CustomAdapter(Context applicationContext, String[] extraList) {
+            this.context = applicationContext;
+            this.extraList = extraList;
+            inflter = (LayoutInflater.from(applicationContext));
+        }
+
+        @Override
+        public int getCount() {
+            return extraList.length;
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return 0;
+        }
+
+        @SuppressLint("SetTextI18n")
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            view = inflter.inflate(R.layout.lyt_spinner_item, null);
+            TextView txt_item = view.findViewById(R.id.txt_item);
+            //   TextView price = view.findViewById(R.id.txtprice);
+
+            txt_item.setText(extraList[i]);
+
+
+
+            return view;
+        }
     }
 }

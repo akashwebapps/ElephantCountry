@@ -5,6 +5,16 @@
 
     <string-array name="store">
         <item>All Store</item>
+        <item>Guwahati</item>
+        <item>Kolkata</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+    </string-array>
+
+
+    <string-array name="item">
+        <item>All Items</item>
+
     </string-array>
 
     <string-array name="Accessories">

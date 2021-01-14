@@ -151,14 +151,15 @@
 
                                 </TextView>
 
-                                <Spinner
-                                    android:id="@+id/select_class_spinnerid"
+                                <TextView
+                                    android:id="@+id/spinner_store"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginRight="@dimen/_20sdp"
                                     android:background="@drawable/spinnerstyle"
-                                    android:entries="@array/store"
-
-                                    ></Spinner>
+                                    android:gravity="center"
+                                    android:text="All Store"
+                                    ></TextView>
                             </LinearLayout>
 
                             <LinearLayout
@@ -323,7 +324,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
+                                    android:text="10 pcs"
                                     style="@style/TableText" />
 
 
@@ -340,7 +341,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
+                                    android:text="T-Shirt"
                                     style="@style/TableText" />
 
 
@@ -350,7 +351,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
+                                    android:text="60 pcs"
                                     style="@style/TableText" />
 
 
@@ -367,7 +368,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
+                                    android:text="Jeans"
                                     style="@style/TableText" />
 
 
@@ -377,7 +378,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
+                                    android:text="40 pcs"
                                     style="@style/TableText" />
 
 
@@ -394,7 +395,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
+                                    android:text="Dhup"
                                     style="@style/TableText" />
 
 
@@ -404,7 +405,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
+                                    android:text="19 pcs"
                                     style="@style/TableText" />
 
 
@@ -421,7 +422,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
+                                    android:text="Wooden Pencil"
                                     style="@style/TableText" />
 
 
@@ -431,173 +432,12 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
+                                    android:text="17 pcs"
                                     style="@style/TableText" />
 
 
                             </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
 
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
-                                    style="@style/TableText" />
-
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
-                                    style="@style/TableText" />
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
-                                    style="@style/TableText" />
-
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
-                                    style="@style/TableText" />
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
-                                    style="@style/TableText" />
-
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
-                                    style="@style/TableText" />
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
-                                    style="@style/TableText" />
-
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
-                                    style="@style/TableText" />
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
-                                    style="@style/TableText" />
-
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
-                                    style="@style/TableText" />
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Cixami Wall Hanging"
-                                    style="@style/TableText" />
-
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="0.00 pcs"
-                                    style="@style/TableText" />
-
-
-                            </TableRow>
 
 
 

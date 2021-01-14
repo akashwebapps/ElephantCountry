@@ -19,21 +19,7 @@ public class DashBordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_bord);
 
-        GraphView linegraph = (GraphView) findViewById(R.id.line_graph);
 
-        BarGraphSeries<DataPoint> lineSeries = new BarGraphSeries<>(new DataPoint[] {
-
-                // date 1st january -7 th, renvenue 5k -20k
-                new DataPoint(05, 1542),
-                new DataPoint(1542, 525),
-                new DataPoint(224, 3524),
-                new DataPoint(3245, 2524),
-                new DataPoint(4254, 6524)
-        });
-
-
-
-        linegraph.addSeries(lineSeries);
 
 
 

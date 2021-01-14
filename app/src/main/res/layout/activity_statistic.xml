@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_white"
-    tools:context=".DashBordActivity">
+    tools:context=".StatisticActivity">
+
+
 
     <include layout="@layout/toolbar_profile"></include>
 
@@ -133,6 +135,7 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
+                                android:orientation="horizontal"
                                 android:layout_weight="1.8">
 
                                 <TextView
@@ -148,13 +151,16 @@
 
                                 </TextView>
 
-                                <Spinner
+                                <TextView
                                     android:id="@+id/spinner_store"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_20sdp"
                                     android:background="@drawable/spinnerstyle"
+                                    android:gravity="center"
+                                    android:text="All Store"
+                                    ></TextView>
 
-                                    ></Spinner>
+
                             </LinearLayout>
 
                             <LinearLayout
@@ -186,14 +192,15 @@
 
                                 </TextView>
 
-                                <Spinner
+                                <TextView
                                     android:id="@+id/spinner_category"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_20sdp"
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:background="@drawable/spinnerstyle"
-
-                                    ></Spinner>
+                                    android:gravity="center"
+                                    android:text="All Category"
+                                        ></TextView>
 
 
                             </LinearLayout>
@@ -215,14 +222,15 @@
 
                                 </TextView>
 
-                                <Spinner
+                                <TextView
                                     android:id="@+id/spinner_item"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_20sdp"
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:background="@drawable/spinnerstyle"
-
-                                    ></Spinner>
+                                    android:gravity="center"
+                                    android:text="All Items"
+                                    ></TextView>
                             </LinearLayout>
 
                         </LinearLayout>
@@ -354,7 +362,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
+                                    android:text="Premium Dhup"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -375,65 +383,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-
-                            </TableRow>
-
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="\u20B9 7.00 "
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -459,7 +409,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
+                                    android:text="MC002"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -469,7 +419,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
+                                    android:text="T-Shirt"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -481,7 +431,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="9.00 pcs"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -490,7 +440,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="\u20B9 250.00 "
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -516,7 +466,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
+                                    android:text="MC003"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -526,7 +476,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
+                                    android:text="Mug"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -538,7 +488,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="19.00 pcs"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -547,7 +497,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="\u20B9 50.00 "
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -556,7 +506,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="14.00 pcs"
                                     style="@style/TableText"/>
 
 
@@ -573,7 +523,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
+                                    android:text="MC004"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -583,7 +533,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
+                                    android:text="Pen"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -595,7 +545,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="9.00 pcs"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -604,7 +554,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="\u20B9 5.00 "
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -613,7 +563,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="8.00 pcs"
                                     style="@style/TableText"/>
 
 
@@ -630,7 +580,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
+                                    android:text="MC005"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -640,7 +590,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
+                                    android:text="Book"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -652,7 +602,7 @@
                                     android:paddingTop="@dimen/_2sdp"
 
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="19.00 pcs"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -661,7 +611,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="\u20B9 500.00 "
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -670,353 +620,13 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
+                                    android:text="18.00 pcs"
                                     style="@style/TableText"/>
 
 
                             </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
 
 
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="MC001"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="akash das"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7.00 pcs"
-                                    style="@style/TableText"/>
-
-
-                            </TableRow>
 
 
                         </TableLayout>
@@ -1056,6 +666,9 @@
             android:drawableRight="@drawable/ic_baseline_longarrow_forward_24"
             android:textColor="@color/white"
             ></TextView>
+
+
+
 
     </LinearLayout>
 

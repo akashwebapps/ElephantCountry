@@ -148,13 +148,15 @@
 
                                 </TextView>
 
-                                <Spinner
-                                    android:id="@+id/select_class_spinnerid"
+                                <TextView
+                                    android:id="@+id/spinner_store"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginRight="@dimen/_20sdp"
                                     android:background="@drawable/spinnerstyle"
-                                  android:entries="@array/store"
-                                    ></Spinner>
+                                    android:gravity="center"
+                                    android:text="All Store"
+                                    ></TextView>
                             </LinearLayout>
 
                             <LinearLayout
@@ -185,6 +187,8 @@
                                     >
 
                                 </TextView>
+
+
 
                                 <TextView
                                     android:id="@+id/tv_startdate"
@@ -323,17 +327,7 @@
                                     android:textColor="#000"
                                     style="@style/TableText" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Payment Status"
-                                    android:textColor="#000"
-                                    style="@style/TableText" />
+
 
 
                             </TableRow>
@@ -370,7 +364,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
+                                    android:text="\u20B9 280.00"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -382,25 +376,6 @@
                                     android:text="1"
                                     style="@style/TableText" />
 
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
 
 
                             </TableRow>
@@ -415,7 +390,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
+                                    android:text="27-01-2020 19:24"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -425,7 +400,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
+                                    android:text="MC-0005"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -436,7 +411,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
+                                    android:text="\u20B9 1250.00"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -445,28 +420,9 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
+                                    android:text="9"
                                     style="@style/TableText" />
 
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
 
 
                             </TableRow>
@@ -481,7 +437,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
+                                    android:text="29-01-2020 09:24"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -491,7 +447,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
+                                    android:text="MC-0006"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -502,7 +458,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
+                                    android:text="\u20B9 250.00"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -511,28 +467,9 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
+                                    android:text="4"
                                     style="@style/TableText" />
 
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
 
 
                             </TableRow>
@@ -547,7 +484,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
+                                    android:text="29-01-2020 19:45"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -557,7 +494,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
+                                    android:text="MC-0007"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -568,7 +505,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
+                                    android:text="\u20B9 750.00"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -577,28 +514,9 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
+                                    android:text="5"
                                     style="@style/TableText" />
 
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
 
 
                             </TableRow>
@@ -613,7 +531,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
+                                    android:text="30-01-2020 12:24"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -623,7 +541,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
+                                    android:text="MC-0008"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -634,7 +552,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
+                                    android:text="\u20B9 1150.00"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -643,428 +561,12 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
+                                    android:text="16"
                                     style="@style/TableText" />
 
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
 
 
                             </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
-                                    style="@style/TableText" />
-
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
-                                    style="@style/TableText" />
-
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
-                                    style="@style/TableText" />
-
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
-                                    style="@style/TableText" />
-
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
-                                    style="@style/TableText" />
-
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="27-01-2020 16:25"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="MC-0004"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="280"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="1"
-                                    style="@style/TableText" />
-
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="paid">
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:background="@drawable/green_capsul_bg"
-                                        android:paddingLeft="@dimen/_5sdp"
-                                        android:paddingRight="@dimen/_5sdp"
-                                        android:text="paid"
-                                        android:textColor="@color/white"
-                                        style="@style/TableText" />
-
-                                </LinearLayout>
-
-
-                            </TableRow>
-
 
 
                         </TableLayout>

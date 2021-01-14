@@ -195,13 +195,15 @@
 
                                 </TextView>
 
-                                <Spinner
-                                    android:id="@+id/select_class_spinnerid"
+                                <TextView
+                                    android:id="@+id/spinner_store"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginRight="@dimen/_20sdp"
                                     android:background="@drawable/spinnerstyle"
-                                    android:entries="@array/store"
-                                    ></Spinner>
+                                    android:gravity="center"
+                                    android:text="All Store"
+                                    ></TextView>
                             </LinearLayout>
 
                             <LinearLayout
@@ -243,6 +245,7 @@
                                     android:gravity="center_vertical"
                                     android:paddingLeft="@dimen/_10sdp"
                                     style="@style/TableText"
+
                                     ></TextView>
 
 
@@ -357,17 +360,6 @@
                                     android:textColor="#000"
                                     style="@style/TableText"/>
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="Total"
-                                    android:textColor="#000"
-                                    style="@style/TableText" />
 
 
 
@@ -385,7 +377,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
+                                    android:text="Nest Post Card"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -406,17 +398,51 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
+                                    android:text="65.00 Pcs"
                                     style="@style/TableText"/>
 
+
+
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- first element of the row-->
                                 <TextView
                                     android:layout_weight="1"
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
+                                    android:text="Nest Poster "
+                                    style="@style/TableText"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:text="23.00 Pcs"
                                     style="@style/TableText" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cell_shape"
+                                    android:paddingLeft="@dimen/_2sdp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    android:text="60.00 Pcs"
+                                    style="@style/TableText"/>
+
+
 
 
 
@@ -432,7 +458,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
+                                    android:text="Wooden Pencil Ghy"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -442,7 +468,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
+                                    android:text="87.00 Pcs"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -453,17 +479,10 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
+                                    android:text="40.00 Pcs"
                                     style="@style/TableText"/>
 
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
+
 
 
 
@@ -479,7 +498,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
+                                    android:text="Sineki Runner"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -489,7 +508,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
+                                    android:text="44.00 Pcs"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -500,17 +519,10 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
+                                    android:text="35.00 Pcs"
                                     style="@style/TableText"/>
 
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
+
 
 
 
@@ -526,7 +538,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
+                                    android:text="Nest Unity Pouch"
                                     style="@style/TableText"/>
 
                                 <TextView
@@ -536,7 +548,7 @@
                                     android:background="@drawable/cell_shape"
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
+                                    android:text="84.00 Pcs"
                                     style="@style/TableText" />
 
                                 <TextView
@@ -547,401 +559,14 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:paddingTop="@dimen/_2sdp"
                                     android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
+                                    android:text="15.00 Pcs"
                                     style="@style/TableText"/>
 
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
+
 
 
 
                             </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
-
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
-
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
-
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
-
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
-
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
-
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
-
-
-
-                            </TableRow>
-                            <TableRow
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- first element of the row-->
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="New Post Card"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:text="9.00 Pcs"
-                                    style="@style/TableText" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="24.00 Pcs"
-                                    style="@style/TableText"/>
-
-                                <TextView
-                                    android:layout_weight="1"
-                                    android:background="@drawable/cell_shape"
-                                    android:paddingLeft="@dimen/_2sdp"
-                                    android:paddingTop="@dimen/_2sdp"
-                                    android:paddingBottom="@dimen/_2sdp"
-                                    android:text="7176.00"
-                                    style="@style/TableText" />
-
-
-
-                            </TableRow>
-
-
-
-
 
                         </TableLayout>
 
